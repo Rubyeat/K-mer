@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yusuf/Ruby/Kmers/K-mer/headers/species.h
+string
+-
+iostream
+-
+vector
+-
+fstream
+-
+sstream
+-
+cstring
+-
+cmath
+-
+algorithm
+-
+
+/home/yusuf/Ruby/Kmers/K-mer/main.cpp
+iostream
+-
+cstdio
+-
+headers/species.h
+/home/yusuf/Ruby/Kmers/K-mer/headers/species.h
+
+/home/yusuf/Ruby/Kmers/K-mer/src/species.cpp
+../headers/species.h
+/home/yusuf/Ruby/Kmers/K-mer/headers/species.h
+
