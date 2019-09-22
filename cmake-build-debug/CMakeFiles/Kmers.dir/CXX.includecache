@@ -23,14 +23,8 @@ cmath
 -
 algorithm
 -
-
-/home/yusuf/Ruby/Kmers/K-mer/main.cpp
-iostream
+map
 -
-cstdio
--
-headers/species.h
-/home/yusuf/Ruby/Kmers/K-mer/headers/species.h
 
 /home/yusuf/Ruby/Kmers/K-mer/src/species.cpp
 ../headers/species.h

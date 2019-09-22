@@ -84,13 +84,37 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/yusuf/Ruby/Kmers/K-mer/headers/dist_matrix.h">
+			<Option target="Kmers"/>
+		</Unit>
+		<Unit filename="/home/yusuf/Ruby/Kmers/K-mer/headers/neighbour_joining.h">
+			<Option target="Kmers"/>
+		</Unit>
+		<Unit filename="/home/yusuf/Ruby/Kmers/K-mer/headers/phylogenetic_tree.h">
+			<Option target="Kmers"/>
+		</Unit>
 		<Unit filename="/home/yusuf/Ruby/Kmers/K-mer/headers/species.h">
+			<Option target="Kmers"/>
+		</Unit>
+		<Unit filename="/home/yusuf/Ruby/Kmers/K-mer/headers/utilities.h">
 			<Option target="Kmers"/>
 		</Unit>
 		<Unit filename="/home/yusuf/Ruby/Kmers/K-mer/main.cpp">
 			<Option target="Kmers"/>
 		</Unit>
+		<Unit filename="/home/yusuf/Ruby/Kmers/K-mer/src/dist_matrix.c">
+			<Option target="Kmers"/>
+		</Unit>
+		<Unit filename="/home/yusuf/Ruby/Kmers/K-mer/src/neighbour_joining.c">
+			<Option target="Kmers"/>
+		</Unit>
+		<Unit filename="/home/yusuf/Ruby/Kmers/K-mer/src/phylogenetic_tree.c">
+			<Option target="Kmers"/>
+		</Unit>
 		<Unit filename="/home/yusuf/Ruby/Kmers/K-mer/src/species.cpp">
+			<Option target="Kmers"/>
+		</Unit>
+		<Unit filename="/home/yusuf/Ruby/Kmers/K-mer/src/utilities.c">
 			<Option target="Kmers"/>
 		</Unit>
 		<Unit filename="/home/yusuf/Ruby/Kmers/K-mer/CMakeLists.txt">

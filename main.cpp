@@ -12,8 +12,8 @@ int main() {
     double distanceMatrixMahalnobis[speciesName.size()][speciesName.size()];
     double distanceMatrixFactorcount[speciesName.size()][speciesName.size()];
     for (int i = 0; i < speciesName.size() ; i++) {
-        Species s(speciesName[i], 10);
-        s.init("../files/Data10/" + file1Name[i], "../files/sequences/" + file2Name[i]);
+        Species s(speciesName[i], 20);
+        s.init("../files/Data20/" + file1Name[i], "../files/sequences/" + file2Name[i]);
         species.push_back(s);
     }
     for (int j = 0; j < speciesName.size(); j++) {

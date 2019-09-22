@@ -15,6 +15,7 @@
 #include <cstring>
 #include <cmath>
 #include <algorithm>
+#include <map>
 using namespace std;
 
 class Species {
@@ -23,8 +24,8 @@ public:
     int kmer;
     double averageKmerCounts;
     int sequenceLength;
+    map<string, int> kmerCount;
     vector<string> kmers;
-    vector<int> kmerCount;
     Species(string n, int kmer);
     int init(string fileName, string fileName2);
     int calculateEuclidianDistance(Species s);

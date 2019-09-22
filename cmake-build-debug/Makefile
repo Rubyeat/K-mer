@@ -150,6 +150,87 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/dist_matrix.o: src/dist_matrix.c.o
+
+.PHONY : src/dist_matrix.o
+
+# target to build an object file
+src/dist_matrix.c.o:
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/dist_matrix.c.o
+.PHONY : src/dist_matrix.c.o
+
+src/dist_matrix.i: src/dist_matrix.c.i
+
+.PHONY : src/dist_matrix.i
+
+# target to preprocess a source file
+src/dist_matrix.c.i:
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/dist_matrix.c.i
+.PHONY : src/dist_matrix.c.i
+
+src/dist_matrix.s: src/dist_matrix.c.s
+
+.PHONY : src/dist_matrix.s
+
+# target to generate assembly for a file
+src/dist_matrix.c.s:
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/dist_matrix.c.s
+.PHONY : src/dist_matrix.c.s
+
+src/neighbour_joining.o: src/neighbour_joining.c.o
+
+.PHONY : src/neighbour_joining.o
+
+# target to build an object file
+src/neighbour_joining.c.o:
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/neighbour_joining.c.o
+.PHONY : src/neighbour_joining.c.o
+
+src/neighbour_joining.i: src/neighbour_joining.c.i
+
+.PHONY : src/neighbour_joining.i
+
+# target to preprocess a source file
+src/neighbour_joining.c.i:
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/neighbour_joining.c.i
+.PHONY : src/neighbour_joining.c.i
+
+src/neighbour_joining.s: src/neighbour_joining.c.s
+
+.PHONY : src/neighbour_joining.s
+
+# target to generate assembly for a file
+src/neighbour_joining.c.s:
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/neighbour_joining.c.s
+.PHONY : src/neighbour_joining.c.s
+
+src/phylogenetic_tree.o: src/phylogenetic_tree.c.o
+
+.PHONY : src/phylogenetic_tree.o
+
+# target to build an object file
+src/phylogenetic_tree.c.o:
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/phylogenetic_tree.c.o
+.PHONY : src/phylogenetic_tree.c.o
+
+src/phylogenetic_tree.i: src/phylogenetic_tree.c.i
+
+.PHONY : src/phylogenetic_tree.i
+
+# target to preprocess a source file
+src/phylogenetic_tree.c.i:
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/phylogenetic_tree.c.i
+.PHONY : src/phylogenetic_tree.c.i
+
+src/phylogenetic_tree.s: src/phylogenetic_tree.c.s
+
+.PHONY : src/phylogenetic_tree.s
+
+# target to generate assembly for a file
+src/phylogenetic_tree.c.s:
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/phylogenetic_tree.c.s
+.PHONY : src/phylogenetic_tree.c.s
+
 src/species.o: src/species.cpp.o
 
 .PHONY : src/species.o
@@ -177,6 +258,33 @@ src/species.cpp.s:
 	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/species.cpp.s
 .PHONY : src/species.cpp.s
 
+src/utilities.o: src/utilities.c.o
+
+.PHONY : src/utilities.o
+
+# target to build an object file
+src/utilities.c.o:
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/utilities.c.o
+.PHONY : src/utilities.c.o
+
+src/utilities.i: src/utilities.c.i
+
+.PHONY : src/utilities.i
+
+# target to preprocess a source file
+src/utilities.c.i:
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/utilities.c.i
+.PHONY : src/utilities.c.i
+
+src/utilities.s: src/utilities.c.s
+
+.PHONY : src/utilities.s
+
+# target to generate assembly for a file
+src/utilities.c.s:
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/utilities.c.s
+.PHONY : src/utilities.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -189,9 +297,21 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/dist_matrix.o"
+	@echo "... src/dist_matrix.i"
+	@echo "... src/dist_matrix.s"
+	@echo "... src/neighbour_joining.o"
+	@echo "... src/neighbour_joining.i"
+	@echo "... src/neighbour_joining.s"
+	@echo "... src/phylogenetic_tree.o"
+	@echo "... src/phylogenetic_tree.i"
+	@echo "... src/phylogenetic_tree.s"
 	@echo "... src/species.o"
 	@echo "... src/species.i"
 	@echo "... src/species.s"
+	@echo "... src/utilities.o"
+	@echo "... src/utilities.i"
+	@echo "... src/utilities.s"
 .PHONY : help
 
 

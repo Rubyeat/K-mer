@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/Kmers.dir/main.cpp.o CMakeFiles/Kmers.dir/src/species.cpp.o  -o Kmers 
+/usr/bin/c++  -g   CMakeFiles/Kmers.dir/main.cpp.o CMakeFiles/Kmers.dir/src/species.cpp.o CMakeFiles/Kmers.dir/src/dist_matrix.c.o CMakeFiles/Kmers.dir/src/neighbour_joining.c.o CMakeFiles/Kmers.dir/src/phylogenetic_tree.c.o CMakeFiles/Kmers.dir/src/utilities.c.o  -o Kmers 

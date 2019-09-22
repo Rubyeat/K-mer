@@ -26,7 +26,7 @@ int Species::init(string fileName, string fileName2) {
             geek >> x;
             sum += x;
             count++;
-            this->kmerCount.push_back(x);
+            this->kmerCount[line2] = x;
             this->kmers.push_back(line2);
         }
         this->averageKmerCounts = sum / (double) count;
@@ -48,11 +48,11 @@ int Species::init(string fileName, string fileName2) {
 int Species::calculateEuclidianDistance(Species s) {
     int sum = 0;
     for (int i = 0; i < this->kmers.size(); ++i) {
-        for (int j = 0; j <s.kmers.size() ; ++j) {
-            if(this->kmers[i] == s.kmers[j]) {
-                sum += pow((this->kmerCount[i] - s.kmerCount[j]), 2);
-                break;
-            }
+        sum += pow((this->kmerCount[this->kmers[i]] - s.kmerCount[this->kmers[i]]), 2);
+    }
+    for (int i = 0; i < s.kmers.size(); i++) {
+        if(this->kmerCount.count(s.kmers[i]) < 1) {
+            sum += pow((s.kmerCount[s.kmers[i]]), 2);
         }
     }
     return sum;
@@ -60,12 +60,12 @@ int Species::calculateEuclidianDistance(Species s) {
 
 double Species::calculateMahalnobisDistance(Species s) {
     double sum = 0;
-    for (int i = 0; i < this->kmers.size(); ++i) {
-        for (int j = 0; j <s.kmers.size() ; ++j) {
-            if(this->kmers[i] == s.kmers[j]) {
-                sum += pow(((this->kmerCount[i]/ abs(this->averageKmerCounts - this->kmerCount[i])) - s.kmerCount[j]/ abs(s.averageKmerCounts - s.kmerCount[j])), 2);
-                break;
-            }
+    for (int i = 0; i < this->kmers.size(); i++) {
+        sum += pow(((this->kmerCount[this->kmers[i]]/ abs(this->averageKmerCounts - this->kmerCount[this->kmers[i]])) - s.kmerCount[this->kmers[i]]/ abs(s.averageKmerCounts - s.kmerCount[this->kmers[i]])), 2);
+    }
+    for (int i = 0; i < s.kmers.size(); i++) {
+        if(this->kmerCount.count(s.kmers[i]) < 1) {
+            sum += pow((s.kmerCount[s.kmers[i]]/ abs(s.averageKmerCounts - s.kmerCount[s.kmers[i]])), 2);
         }
     }
     return sum;
@@ -74,14 +74,12 @@ double Species::calculateMahalnobisDistance(Species s) {
 double Species::calculateFactorDistance(Species s) {
     double sum = 0;
     double temp = (double)(min(this->sequenceLength, s.sequenceLength) - this->kmer +1);
-    for (int i = 0; i < this->kmers.size(); ++i) {
-        for (int j = 0; j <s.kmers.size() ; ++j) {
-            if(this->kmers[i] == s.kmers[j]) {
-                sum += (min(this->kmerCount[i], s.kmerCount[j])) / temp;
-                break;
-            }
+    for(int i = 0; i < this->kmers.size(); i++) {
+        if(s.kmerCount.count(this->kmers[i]) > 0) {
+            sum += (min(this->kmerCount[this->kmers[i]], s.kmerCount[this->kmers[i]])) / temp;
         }
     }
+
     double x = abs(log10(0.1 + sum));
     return x;
 }
