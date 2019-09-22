@@ -1,4 +1,4 @@
-/home/yusuf/Yusuf/CLion-2019.2.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/yusuf/Ruby/Kmers/K-mer
+/home/yusuf/Yusuf/clion-2019.2.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/yusuf/Ruby/K-mer
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/yusuf/Ruby/Kmers/K-mer/cmake-build-debug
+-- Build files have been written to: /home/yusuf/Ruby/K-mer/cmake-build-debug

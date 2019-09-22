@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/yusuf/Yusuf/CLion-2019.2.2/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/yusuf/Yusuf/clion-2019.2.2/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/yusuf/Yusuf/CLion-2019.2.2/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/yusuf/Yusuf/clion-2019.2.2/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yusuf/Ruby/Kmers/K-mer
+CMAKE_SOURCE_DIR = /home/yusuf/Ruby/K-mer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yusuf/Ruby/Kmers/K-mer/cmake-build-debug
+CMAKE_BINARY_DIR = /home/yusuf/Ruby/K-mer/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Kmers.dir/depend.make
@@ -59,103 +59,103 @@ include CMakeFiles/Kmers.dir/flags.make
 
 CMakeFiles/Kmers.dir/main.cpp.o: CMakeFiles/Kmers.dir/flags.make
 CMakeFiles/Kmers.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yusuf/Ruby/Kmers/K-mer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Kmers.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Kmers.dir/main.cpp.o -c /home/yusuf/Ruby/Kmers/K-mer/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yusuf/Ruby/K-mer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Kmers.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Kmers.dir/main.cpp.o -c /home/yusuf/Ruby/K-mer/main.cpp
 
 CMakeFiles/Kmers.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Kmers.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yusuf/Ruby/Kmers/K-mer/main.cpp > CMakeFiles/Kmers.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yusuf/Ruby/K-mer/main.cpp > CMakeFiles/Kmers.dir/main.cpp.i
 
 CMakeFiles/Kmers.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Kmers.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yusuf/Ruby/Kmers/K-mer/main.cpp -o CMakeFiles/Kmers.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yusuf/Ruby/K-mer/main.cpp -o CMakeFiles/Kmers.dir/main.cpp.s
 
 CMakeFiles/Kmers.dir/src/species.cpp.o: CMakeFiles/Kmers.dir/flags.make
 CMakeFiles/Kmers.dir/src/species.cpp.o: ../src/species.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yusuf/Ruby/Kmers/K-mer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Kmers.dir/src/species.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Kmers.dir/src/species.cpp.o -c /home/yusuf/Ruby/Kmers/K-mer/src/species.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yusuf/Ruby/K-mer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Kmers.dir/src/species.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Kmers.dir/src/species.cpp.o -c /home/yusuf/Ruby/K-mer/src/species.cpp
 
 CMakeFiles/Kmers.dir/src/species.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Kmers.dir/src/species.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yusuf/Ruby/Kmers/K-mer/src/species.cpp > CMakeFiles/Kmers.dir/src/species.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yusuf/Ruby/K-mer/src/species.cpp > CMakeFiles/Kmers.dir/src/species.cpp.i
 
 CMakeFiles/Kmers.dir/src/species.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Kmers.dir/src/species.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yusuf/Ruby/Kmers/K-mer/src/species.cpp -o CMakeFiles/Kmers.dir/src/species.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yusuf/Ruby/K-mer/src/species.cpp -o CMakeFiles/Kmers.dir/src/species.cpp.s
 
-CMakeFiles/Kmers.dir/src/dist_matrix.c.o: CMakeFiles/Kmers.dir/flags.make
-CMakeFiles/Kmers.dir/src/dist_matrix.c.o: ../src/dist_matrix.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yusuf/Ruby/Kmers/K-mer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Kmers.dir/src/dist_matrix.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Kmers.dir/src/dist_matrix.c.o   -c /home/yusuf/Ruby/Kmers/K-mer/src/dist_matrix.c
+CMakeFiles/Kmers.dir/src/dist_matrix.cpp.o: CMakeFiles/Kmers.dir/flags.make
+CMakeFiles/Kmers.dir/src/dist_matrix.cpp.o: ../src/dist_matrix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yusuf/Ruby/K-mer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Kmers.dir/src/dist_matrix.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Kmers.dir/src/dist_matrix.cpp.o -c /home/yusuf/Ruby/K-mer/src/dist_matrix.cpp
 
-CMakeFiles/Kmers.dir/src/dist_matrix.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Kmers.dir/src/dist_matrix.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yusuf/Ruby/Kmers/K-mer/src/dist_matrix.c > CMakeFiles/Kmers.dir/src/dist_matrix.c.i
+CMakeFiles/Kmers.dir/src/dist_matrix.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Kmers.dir/src/dist_matrix.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yusuf/Ruby/K-mer/src/dist_matrix.cpp > CMakeFiles/Kmers.dir/src/dist_matrix.cpp.i
 
-CMakeFiles/Kmers.dir/src/dist_matrix.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Kmers.dir/src/dist_matrix.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yusuf/Ruby/Kmers/K-mer/src/dist_matrix.c -o CMakeFiles/Kmers.dir/src/dist_matrix.c.s
+CMakeFiles/Kmers.dir/src/dist_matrix.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Kmers.dir/src/dist_matrix.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yusuf/Ruby/K-mer/src/dist_matrix.cpp -o CMakeFiles/Kmers.dir/src/dist_matrix.cpp.s
 
-CMakeFiles/Kmers.dir/src/neighbour_joining.c.o: CMakeFiles/Kmers.dir/flags.make
-CMakeFiles/Kmers.dir/src/neighbour_joining.c.o: ../src/neighbour_joining.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yusuf/Ruby/Kmers/K-mer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Kmers.dir/src/neighbour_joining.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Kmers.dir/src/neighbour_joining.c.o   -c /home/yusuf/Ruby/Kmers/K-mer/src/neighbour_joining.c
+CMakeFiles/Kmers.dir/src/neighbour_joining.cpp.o: CMakeFiles/Kmers.dir/flags.make
+CMakeFiles/Kmers.dir/src/neighbour_joining.cpp.o: ../src/neighbour_joining.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yusuf/Ruby/K-mer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Kmers.dir/src/neighbour_joining.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Kmers.dir/src/neighbour_joining.cpp.o -c /home/yusuf/Ruby/K-mer/src/neighbour_joining.cpp
 
-CMakeFiles/Kmers.dir/src/neighbour_joining.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Kmers.dir/src/neighbour_joining.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yusuf/Ruby/Kmers/K-mer/src/neighbour_joining.c > CMakeFiles/Kmers.dir/src/neighbour_joining.c.i
+CMakeFiles/Kmers.dir/src/neighbour_joining.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Kmers.dir/src/neighbour_joining.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yusuf/Ruby/K-mer/src/neighbour_joining.cpp > CMakeFiles/Kmers.dir/src/neighbour_joining.cpp.i
 
-CMakeFiles/Kmers.dir/src/neighbour_joining.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Kmers.dir/src/neighbour_joining.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yusuf/Ruby/Kmers/K-mer/src/neighbour_joining.c -o CMakeFiles/Kmers.dir/src/neighbour_joining.c.s
+CMakeFiles/Kmers.dir/src/neighbour_joining.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Kmers.dir/src/neighbour_joining.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yusuf/Ruby/K-mer/src/neighbour_joining.cpp -o CMakeFiles/Kmers.dir/src/neighbour_joining.cpp.s
 
-CMakeFiles/Kmers.dir/src/phylogenetic_tree.c.o: CMakeFiles/Kmers.dir/flags.make
-CMakeFiles/Kmers.dir/src/phylogenetic_tree.c.o: ../src/phylogenetic_tree.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yusuf/Ruby/Kmers/K-mer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Kmers.dir/src/phylogenetic_tree.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Kmers.dir/src/phylogenetic_tree.c.o   -c /home/yusuf/Ruby/Kmers/K-mer/src/phylogenetic_tree.c
+CMakeFiles/Kmers.dir/src/phylogenetic_tree.cpp.o: CMakeFiles/Kmers.dir/flags.make
+CMakeFiles/Kmers.dir/src/phylogenetic_tree.cpp.o: ../src/phylogenetic_tree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yusuf/Ruby/K-mer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Kmers.dir/src/phylogenetic_tree.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Kmers.dir/src/phylogenetic_tree.cpp.o -c /home/yusuf/Ruby/K-mer/src/phylogenetic_tree.cpp
 
-CMakeFiles/Kmers.dir/src/phylogenetic_tree.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Kmers.dir/src/phylogenetic_tree.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yusuf/Ruby/Kmers/K-mer/src/phylogenetic_tree.c > CMakeFiles/Kmers.dir/src/phylogenetic_tree.c.i
+CMakeFiles/Kmers.dir/src/phylogenetic_tree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Kmers.dir/src/phylogenetic_tree.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yusuf/Ruby/K-mer/src/phylogenetic_tree.cpp > CMakeFiles/Kmers.dir/src/phylogenetic_tree.cpp.i
 
-CMakeFiles/Kmers.dir/src/phylogenetic_tree.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Kmers.dir/src/phylogenetic_tree.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yusuf/Ruby/Kmers/K-mer/src/phylogenetic_tree.c -o CMakeFiles/Kmers.dir/src/phylogenetic_tree.c.s
+CMakeFiles/Kmers.dir/src/phylogenetic_tree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Kmers.dir/src/phylogenetic_tree.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yusuf/Ruby/K-mer/src/phylogenetic_tree.cpp -o CMakeFiles/Kmers.dir/src/phylogenetic_tree.cpp.s
 
-CMakeFiles/Kmers.dir/src/utilities.c.o: CMakeFiles/Kmers.dir/flags.make
-CMakeFiles/Kmers.dir/src/utilities.c.o: ../src/utilities.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yusuf/Ruby/Kmers/K-mer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Kmers.dir/src/utilities.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Kmers.dir/src/utilities.c.o   -c /home/yusuf/Ruby/Kmers/K-mer/src/utilities.c
+CMakeFiles/Kmers.dir/src/utilities.cpp.o: CMakeFiles/Kmers.dir/flags.make
+CMakeFiles/Kmers.dir/src/utilities.cpp.o: ../src/utilities.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yusuf/Ruby/K-mer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Kmers.dir/src/utilities.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Kmers.dir/src/utilities.cpp.o -c /home/yusuf/Ruby/K-mer/src/utilities.cpp
 
-CMakeFiles/Kmers.dir/src/utilities.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Kmers.dir/src/utilities.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yusuf/Ruby/Kmers/K-mer/src/utilities.c > CMakeFiles/Kmers.dir/src/utilities.c.i
+CMakeFiles/Kmers.dir/src/utilities.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Kmers.dir/src/utilities.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yusuf/Ruby/K-mer/src/utilities.cpp > CMakeFiles/Kmers.dir/src/utilities.cpp.i
 
-CMakeFiles/Kmers.dir/src/utilities.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Kmers.dir/src/utilities.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yusuf/Ruby/Kmers/K-mer/src/utilities.c -o CMakeFiles/Kmers.dir/src/utilities.c.s
+CMakeFiles/Kmers.dir/src/utilities.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Kmers.dir/src/utilities.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yusuf/Ruby/K-mer/src/utilities.cpp -o CMakeFiles/Kmers.dir/src/utilities.cpp.s
 
 # Object files for target Kmers
 Kmers_OBJECTS = \
 "CMakeFiles/Kmers.dir/main.cpp.o" \
 "CMakeFiles/Kmers.dir/src/species.cpp.o" \
-"CMakeFiles/Kmers.dir/src/dist_matrix.c.o" \
-"CMakeFiles/Kmers.dir/src/neighbour_joining.c.o" \
-"CMakeFiles/Kmers.dir/src/phylogenetic_tree.c.o" \
-"CMakeFiles/Kmers.dir/src/utilities.c.o"
+"CMakeFiles/Kmers.dir/src/dist_matrix.cpp.o" \
+"CMakeFiles/Kmers.dir/src/neighbour_joining.cpp.o" \
+"CMakeFiles/Kmers.dir/src/phylogenetic_tree.cpp.o" \
+"CMakeFiles/Kmers.dir/src/utilities.cpp.o"
 
 # External object files for target Kmers
 Kmers_EXTERNAL_OBJECTS =
 
 Kmers: CMakeFiles/Kmers.dir/main.cpp.o
 Kmers: CMakeFiles/Kmers.dir/src/species.cpp.o
-Kmers: CMakeFiles/Kmers.dir/src/dist_matrix.c.o
-Kmers: CMakeFiles/Kmers.dir/src/neighbour_joining.c.o
-Kmers: CMakeFiles/Kmers.dir/src/phylogenetic_tree.c.o
-Kmers: CMakeFiles/Kmers.dir/src/utilities.c.o
+Kmers: CMakeFiles/Kmers.dir/src/dist_matrix.cpp.o
+Kmers: CMakeFiles/Kmers.dir/src/neighbour_joining.cpp.o
+Kmers: CMakeFiles/Kmers.dir/src/phylogenetic_tree.cpp.o
+Kmers: CMakeFiles/Kmers.dir/src/utilities.cpp.o
 Kmers: CMakeFiles/Kmers.dir/build.make
 Kmers: CMakeFiles/Kmers.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yusuf/Ruby/Kmers/K-mer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Kmers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yusuf/Ruby/K-mer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Kmers"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Kmers.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -168,6 +168,6 @@ CMakeFiles/Kmers.dir/clean:
 .PHONY : CMakeFiles/Kmers.dir/clean
 
 CMakeFiles/Kmers.dir/depend:
-	cd /home/yusuf/Ruby/Kmers/K-mer/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yusuf/Ruby/Kmers/K-mer /home/yusuf/Ruby/Kmers/K-mer /home/yusuf/Ruby/Kmers/K-mer/cmake-build-debug /home/yusuf/Ruby/Kmers/K-mer/cmake-build-debug /home/yusuf/Ruby/Kmers/K-mer/cmake-build-debug/CMakeFiles/Kmers.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yusuf/Ruby/K-mer/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yusuf/Ruby/K-mer /home/yusuf/Ruby/K-mer /home/yusuf/Ruby/K-mer/cmake-build-debug /home/yusuf/Ruby/K-mer/cmake-build-debug /home/yusuf/Ruby/K-mer/cmake-build-debug/CMakeFiles/Kmers.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Kmers.dir/depend
 

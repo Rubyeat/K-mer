@@ -1,4 +1,4 @@
-#include "utilities.h"
+#include "../headers/utilities.h"
 
 #include <ctype.h>
 #include <string.h>
@@ -10,7 +10,7 @@ char *neigh_strdup(const char *src) {
     if (src != NULL) {
         size_t length = strlen(src);
 
-        dst = malloc(length + 1);
+        dst = (char*)malloc(length + 1);
 
         if (dst != NULL) {
             strcpy(dst, src);
@@ -64,4 +64,37 @@ size_t filename_copy(const char *path, char *dest, size_t size) {
     }
     
     return count;
+}
+
+dist_matrix *load_file(vector<Species> species, double **ar) {
+    int result;
+    uint32_t species_count;
+
+    species_count = species.size();
+    dist_matrix *dmat = dist_matrix_init(species_count);
+
+    if (!dmat) {
+        printf("Unable to create distance matrix");
+        return NULL;
+    }
+
+    for (uint32_t i = 0; i < species_count; i++) {
+        /* species name: up to 30 alphabetic or whitespace characters */
+        char species_name[31];
+        int a = 0;
+        for(; a < species[i].name.length(); a++) {
+            species_name[a] = species[i].name[a];
+        }
+        species_name[a] = 0;
+
+        dist_matrix_set_species_name(dmat, i, species_name);
+        dmat->cluster_sizes[i] = 1;
+
+        for (uint32_t j = 0; j < i; j++) {
+            double *element = dist_matrix_element(dmat, i, j);
+            *element = ar[i][j];
+
+        }
+    }
+    return dmat;
 }

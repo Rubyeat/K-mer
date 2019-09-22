@@ -1,5 +1,5 @@
-#include "phylogenetic_tree.h"
-#include "utilities.h"
+#include "../headers/phylogenetic_tree.h"
+#include "../headers/utilities.h"
 
 #include <assert.h>
 #include <stdlib.h>
@@ -15,7 +15,7 @@ btree_storage *btree_storage_init(uint32_t nodes_count) {
 
     /* Zero-initialize the storage to ensure that btree_storage_free can correctly
      * free the strings */
-    btree_storage *storage = calloc(size, 1);
+    btree_storage *storage = (btree_storage*) calloc(size, 1);
 
     if (storage != NULL) {
         storage->nodes_count = nodes_count;

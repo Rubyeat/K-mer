@@ -1,4 +1,4 @@
-#include "neighbour_joining.h"
+#include "../headers/neighbour_joining.h"
 
 #include <assert.h>
 #include <math.h>

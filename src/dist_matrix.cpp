@@ -1,5 +1,5 @@
-#include "dist_matrix.h"
-#include "utilities.h"
+#include "../headers/dist_matrix.h"
+#include "../headers/utilities.h"
 
 #include <assert.h>
 #include <stdlib.h>
@@ -10,20 +10,19 @@
 size_t dist_matrix_size(uint32_t species_count) {
     size_t matrix_size = species_count * (species_count - 1) / 2;
     size_t struct_size = sizeof(dist_matrix) + matrix_size * member_size(dist_matrix, distances[0]);
-
     return struct_size;
 }
 
 dist_matrix *dist_matrix_init(uint32_t species_count) {
     size_t size = dist_matrix_size(species_count);
-    dist_matrix *dmat = malloc(size);
+    dist_matrix *dmat = (dist_matrix*) malloc(size);
 
     if (dmat != NULL) {
         dmat->species_count = species_count;
 
         /* Zero-initialize the array of species names to ensure that dist_matrix_free
          * can correctly free the strings */
-        dmat->species_names = calloc(species_count, member_size(dist_matrix, species_names[0]));
+        dmat->species_names = (char **) calloc(species_count, member_size(dist_matrix, species_names[0]));
 
         if (dmat->species_names == NULL) {
             dist_matrix_free(dmat);
@@ -31,7 +30,7 @@ dist_matrix *dist_matrix_init(uint32_t species_count) {
             return NULL;
         }
         
-        dmat->cluster_sizes = malloc(species_count * member_size(dist_matrix, cluster_sizes[0]));
+        dmat->cluster_sizes = (uint32_t *) malloc(species_count * member_size(dist_matrix, cluster_sizes[0]));
         
         if (dmat->cluster_sizes == NULL) {
             dist_matrix_free(dmat);
