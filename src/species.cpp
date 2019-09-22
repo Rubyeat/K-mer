@@ -50,6 +50,7 @@ int Species::calculateEuclidianDistance(Species s) {
     for (int i = 0; i < this->kmers.size(); ++i) {
         sum += pow((this->kmerCount[this->kmers[i]] - s.kmerCount[this->kmers[i]]), 2);
     }
+
     for (int i = 0; i < s.kmers.size(); i++) {
         if(this->kmerCount.count(s.kmers[i]) < 1) {
             sum += pow((s.kmerCount[s.kmers[i]]), 2);
