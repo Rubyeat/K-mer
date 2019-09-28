@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/yusuf/Yusuf/clion-2019.2.2/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/yusuf/Yusuf/CLion-2019.2.2/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/yusuf/Yusuf/clion-2019.2.2/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/yusuf/Yusuf/CLion-2019.2.2/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yusuf/Ruby/K-mer
+CMAKE_SOURCE_DIR = /home/yusuf/Ruby/Kmers/K-mer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yusuf/Ruby/K-mer/cmake-build-debug
+CMAKE_BINARY_DIR = /home/yusuf/Ruby/Kmers/K-mer/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/yusuf/Ruby/K-mer/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/yusuf/Yusuf/clion-2019.2.2/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/yusuf/Yusuf/CLion-2019.2.2/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/yusuf/Yusuf/clion-2019.2.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/yusuf/Yusuf/CLion-2019.2.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yusuf/Ruby/K-mer/cmake-build-debug/CMakeFiles /home/yusuf/Ruby/K-mer/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yusuf/Ruby/Kmers/K-mer/cmake-build-debug/CMakeFiles /home/yusuf/Ruby/Kmers/K-mer/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yusuf/Ruby/K-mer/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yusuf/Ruby/Kmers/K-mer/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -150,87 +150,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src/dist_matrix.o: src/dist_matrix.cpp.o
-
-.PHONY : src/dist_matrix.o
-
-# target to build an object file
-src/dist_matrix.cpp.o:
-	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/dist_matrix.cpp.o
-.PHONY : src/dist_matrix.cpp.o
-
-src/dist_matrix.i: src/dist_matrix.cpp.i
-
-.PHONY : src/dist_matrix.i
-
-# target to preprocess a source file
-src/dist_matrix.cpp.i:
-	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/dist_matrix.cpp.i
-.PHONY : src/dist_matrix.cpp.i
-
-src/dist_matrix.s: src/dist_matrix.cpp.s
-
-.PHONY : src/dist_matrix.s
-
-# target to generate assembly for a file
-src/dist_matrix.cpp.s:
-	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/dist_matrix.cpp.s
-.PHONY : src/dist_matrix.cpp.s
-
-src/neighbour_joining.o: src/neighbour_joining.cpp.o
-
-.PHONY : src/neighbour_joining.o
-
-# target to build an object file
-src/neighbour_joining.cpp.o:
-	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/neighbour_joining.cpp.o
-.PHONY : src/neighbour_joining.cpp.o
-
-src/neighbour_joining.i: src/neighbour_joining.cpp.i
-
-.PHONY : src/neighbour_joining.i
-
-# target to preprocess a source file
-src/neighbour_joining.cpp.i:
-	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/neighbour_joining.cpp.i
-.PHONY : src/neighbour_joining.cpp.i
-
-src/neighbour_joining.s: src/neighbour_joining.cpp.s
-
-.PHONY : src/neighbour_joining.s
-
-# target to generate assembly for a file
-src/neighbour_joining.cpp.s:
-	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/neighbour_joining.cpp.s
-.PHONY : src/neighbour_joining.cpp.s
-
-src/phylogenetic_tree.o: src/phylogenetic_tree.cpp.o
-
-.PHONY : src/phylogenetic_tree.o
-
-# target to build an object file
-src/phylogenetic_tree.cpp.o:
-	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/phylogenetic_tree.cpp.o
-.PHONY : src/phylogenetic_tree.cpp.o
-
-src/phylogenetic_tree.i: src/phylogenetic_tree.cpp.i
-
-.PHONY : src/phylogenetic_tree.i
-
-# target to preprocess a source file
-src/phylogenetic_tree.cpp.i:
-	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/phylogenetic_tree.cpp.i
-.PHONY : src/phylogenetic_tree.cpp.i
-
-src/phylogenetic_tree.s: src/phylogenetic_tree.cpp.s
-
-.PHONY : src/phylogenetic_tree.s
-
-# target to generate assembly for a file
-src/phylogenetic_tree.cpp.s:
-	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/phylogenetic_tree.cpp.s
-.PHONY : src/phylogenetic_tree.cpp.s
-
 src/species.o: src/species.cpp.o
 
 .PHONY : src/species.o
@@ -258,33 +177,6 @@ src/species.cpp.s:
 	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/species.cpp.s
 .PHONY : src/species.cpp.s
 
-src/utilities.o: src/utilities.cpp.o
-
-.PHONY : src/utilities.o
-
-# target to build an object file
-src/utilities.cpp.o:
-	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/utilities.cpp.o
-.PHONY : src/utilities.cpp.o
-
-src/utilities.i: src/utilities.cpp.i
-
-.PHONY : src/utilities.i
-
-# target to preprocess a source file
-src/utilities.cpp.i:
-	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/utilities.cpp.i
-.PHONY : src/utilities.cpp.i
-
-src/utilities.s: src/utilities.cpp.s
-
-.PHONY : src/utilities.s
-
-# target to generate assembly for a file
-src/utilities.cpp.s:
-	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/utilities.cpp.s
-.PHONY : src/utilities.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -297,21 +189,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/dist_matrix.o"
-	@echo "... src/dist_matrix.i"
-	@echo "... src/dist_matrix.s"
-	@echo "... src/neighbour_joining.o"
-	@echo "... src/neighbour_joining.i"
-	@echo "... src/neighbour_joining.s"
-	@echo "... src/phylogenetic_tree.o"
-	@echo "... src/phylogenetic_tree.i"
-	@echo "... src/phylogenetic_tree.s"
 	@echo "... src/species.o"
 	@echo "... src/species.i"
 	@echo "... src/species.s"
-	@echo "... src/utilities.o"
-	@echo "... src/utilities.i"
-	@echo "... src/utilities.s"
 .PHONY : help
 
 
