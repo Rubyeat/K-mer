@@ -45,42 +45,26 @@ int Species::init(string fileName, string fileName2) {
     return 0;
 }
 
-int Species::calculateEuclidianDistance(Species s) {
-    int sum = 0;
-    for (int i = 0; i < this->kmers.size(); ++i) {
-        sum += pow((this->kmerCount[this->kmers[i]] - s.kmerCount[this->kmers[i]]), 2);
-    }
-
-    for (int i = 0; i < s.kmers.size(); i++) {
-        if(this->kmerCount.count(s.kmers[i]) < 1) {
-            sum += pow((s.kmerCount[s.kmers[i]]), 2);
-        }
-    }
-    return sum;
-}
-
-double Species::calculateMahalnobisDistance(Species s) {
-    double sum = 0;
-    for (int i = 0; i < this->kmers.size(); i++) {
-        sum += pow(((this->kmerCount[this->kmers[i]]/ abs(this->averageKmerCounts - this->kmerCount[this->kmers[i]])) - s.kmerCount[this->kmers[i]]/ abs(s.averageKmerCounts - s.kmerCount[this->kmers[i]])), 2);
-    }
-    for (int i = 0; i < s.kmers.size(); i++) {
-        if(this->kmerCount.count(s.kmers[i]) < 1) {
-            sum += pow((s.kmerCount[s.kmers[i]]/ abs(s.averageKmerCounts - s.kmerCount[s.kmers[i]])), 2);
-        }
-    }
-    return sum;
-}
-
-double Species::calculateFactorDistance(Species s) {
-    double sum = 0;
+vector<double> Species::calculateDistance(Species s) {
+    vector<double> v;
+    double sumEuclidian = 0;
+    double sumMahalnobis = 0;
     double temp = (double)(min(this->sequenceLength, s.sequenceLength) - this->kmer +1);
-    for(int i = 0; i < this->kmers.size(); i++) {
-        if(s.kmerCount.count(this->kmers[i]) > 0) {
-            sum += (min(this->kmerCount[this->kmers[i]], s.kmerCount[this->kmers[i]])) / temp;
-        }
+    double sumFactor = 0;
+    for (int i = 0; i < this->kmers.size(); ++i) {
+        sumEuclidian += pow((this->kmerCount[this->kmers[i]] - s.kmerCount[this->kmers[i]]), 2);
+        sumMahalnobis += pow(((this->kmerCount[this->kmers[i]]/ abs(this->averageKmerCounts - this->kmerCount[this->kmers[i]])) - s.kmerCount[this->kmers[i]]/ abs(s.averageKmerCounts - s.kmerCount[this->kmers[i]])), 2);
+        sumFactor += (min(this->kmerCount[this->kmers[i]], s.kmerCount[this->kmers[i]])) / temp;
     }
 
-    double x = abs(log10(0.1 + sum));
-    return x;
+    for (int i = 0; i < s.kmers.size(); i++) {
+        if(this->kmerCount.count(s.kmers[i]) < 1) {
+            sumEuclidian += pow((s.kmerCount[s.kmers[i]]), 2);
+            sumMahalnobis += pow((s.kmerCount[s.kmers[i]]/ abs(s.averageKmerCounts - s.kmerCount[s.kmers[i]])), 2);
+        }
+    }
+    v.push_back(sumEuclidian);
+    v.push_back(sumMahalnobis);
+    v.push_back(abs(log10(0.1 + sumFactor)));
+    return v;
 }

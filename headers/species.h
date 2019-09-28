@@ -28,9 +28,7 @@ public:
     vector<string> kmers;
     Species(string n, int kmer);
     int init(string fileName, string fileName2);
-    int calculateEuclidianDistance(Species s);
-    double calculateMahalnobisDistance(Species s);
-    double calculateFactorDistance(Species s);
+    vector<double> calculateDistance(Species s);
 };
 
 
