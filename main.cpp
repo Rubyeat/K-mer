@@ -58,27 +58,27 @@ int main() {
     btree_storage *tree_storage = nj_tree_init(dmatE, partial_trees);
 
     while (dmatE->species_count >= 2) {
-        /* Compute the average distance of each clusters from the others */
+        //* Compute the average distance of each clusters from the others *//*
         dist_matrix_compute_avg_distances(dmatE, u);
 
-        /* Find the pair of nearest clusters */
+        //* Find the pair of nearest clusters *//*
         uint32_t c1, c2;
         nj_find_nearest_clusters(dmatE, u, &c1, &c2);
 
-        /* Generate a name for the new cluster */
+        //* Generate a name for the new cluster *//*
         unsigned long result = snprintf(cluster_name, sizeof(cluster_name),"%d", cluster_id);
-        /* Add a node for the new cluster to the array of partial trees */
+        //* Add a node for the new cluster to the array of partial trees *//*
         nj_tree_add_node(dmatE, u, tree_storage, partial_trees, cluster_name, c1, c2);
 
-        /* Create a new dist_matrix joining the specified clusters */
+        //* Create a new dist_matrix joining the specified clusters *//*
         dist_matrix *joined = nj_join_clusters(dmatE, cluster_name, c1, c2);
 
         if (joined == NULL) {
-            /* Error, stop here */
+            //* Error, stop here *//*
             break;
         }
 
-        /* Release the old distance matrix */
+        //* Release the old distance matrix *//*
         dist_matrix_free(dmatE);
         dmatE = joined;
 
@@ -92,7 +92,7 @@ int main() {
 
     dist_matrix_free(dmatE);
     btree_storage_free(tree_storage);
-    printMatrix(species, distanceMatrixEucledian, distanceMatrixFactorcount, distanceMatrixFactorcount);
+    printMatrix(species, distanceMatrixEucledian, distanceMatrixMahalnobis, distanceMatrixFactorcount);
     delete[] distanceMatrixEucledian;
     delete[] distanceMatrixMahalnobis;
     delete[] distanceMatrixFactorcount;

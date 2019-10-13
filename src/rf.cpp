@@ -1334,7 +1334,7 @@ void EcrireMatrice(FILE *outmat,double **DISS, char **NOMS,int n){
 /* Main function */
 
 //= format : rf.exe inputfile outputfile tmp matrixfile
-int main (int argc,char ** argv)
+int Fmain (int argc,char ** argv)
 {
 	a=0;	
 	//= 1 : input.txt
