@@ -1,8 +1,9 @@
 #ifndef NEIGH_PHYLOGENETIC_TREE_H
 #define NEIGH_PHYLOGENETIC_TREE_H
 
-#include <stdio.h>
+#include <iostream>
 #include <stdint.h>
+#include <string>
 
 typedef struct btree_node btree_node;
 
@@ -30,10 +31,11 @@ struct btree_storage {
     btree_node nodes[];
 };
 
+
+
 size_t btree_storage_size(uint32_t nodes_count);
 btree_storage *btree_storage_init(uint32_t nodes_count);
 void btree_storage_free(btree_storage *tree);
-
 /* Fetch the first available node */
 btree_node *btree_storage_fetch(btree_storage *storage);
 
@@ -43,5 +45,8 @@ uint32_t btree_get_height(btree_node *root);
 
 void btree_print_tree(btree_node *root);
 void btree_print_trees(btree_node **trees, uint32_t tree_count);
+std::string btree_print_newick_tree(btree_node *root);
+static void btree_newick_format(btree_node *root, double distance, uint32_t depth, bool *is_open, bool isLeft, bool isFristCall);
+
 
 #endif /* NEIGH_PHYLOGENETIC_TREE_H */

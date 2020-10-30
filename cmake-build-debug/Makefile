@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named tests
+
+# Build rule for target.
+tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
+
+# fast build rule for target.
+tests/fast:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+.PHONY : tests/fast
+
+#=============================================================================
+# Target rules for targets named build_tree
+
+# Build rule for target.
+build_tree: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 build_tree
+.PHONY : build_tree
+
+# fast build rule for target.
+build_tree/fast:
+	$(MAKE) -f CMakeFiles/build_tree.dir/build.make CMakeFiles/build_tree.dir/build
+.PHONY : build_tree/fast
+
+#=============================================================================
 # Target rules for targets named Kmers
 
 # Build rule for target.
@@ -123,32 +149,437 @@ Kmers/fast:
 	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/build
 .PHONY : Kmers/fast
 
-main.o: main.cpp.o
+src/BipartiteGraph.o: src/BipartiteGraph.cpp.o
 
-.PHONY : main.o
+.PHONY : src/BipartiteGraph.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/BipartiteGraph.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/BipartiteGraph.cpp.o
+	$(MAKE) -f CMakeFiles/build_tree.dir/build.make CMakeFiles/build_tree.dir/src/BipartiteGraph.cpp.o
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/BipartiteGraph.cpp.o
+.PHONY : src/BipartiteGraph.cpp.o
 
-main.i: main.cpp.i
+src/BipartiteGraph.i: src/BipartiteGraph.cpp.i
 
-.PHONY : main.i
+.PHONY : src/BipartiteGraph.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/BipartiteGraph.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/BipartiteGraph.cpp.i
+	$(MAKE) -f CMakeFiles/build_tree.dir/build.make CMakeFiles/build_tree.dir/src/BipartiteGraph.cpp.i
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/BipartiteGraph.cpp.i
+.PHONY : src/BipartiteGraph.cpp.i
 
-main.s: main.cpp.s
+src/BipartiteGraph.s: src/BipartiteGraph.cpp.s
 
-.PHONY : main.s
+.PHONY : src/BipartiteGraph.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/BipartiteGraph.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/BipartiteGraph.cpp.s
+	$(MAKE) -f CMakeFiles/build_tree.dir/build.make CMakeFiles/build_tree.dir/src/BipartiteGraph.cpp.s
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/BipartiteGraph.cpp.s
+.PHONY : src/BipartiteGraph.cpp.s
+
+src/Bipartition.o: src/Bipartition.cpp.o
+
+.PHONY : src/Bipartition.o
+
+# target to build an object file
+src/Bipartition.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Bipartition.cpp.o
+	$(MAKE) -f CMakeFiles/build_tree.dir/build.make CMakeFiles/build_tree.dir/src/Bipartition.cpp.o
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/Bipartition.cpp.o
+.PHONY : src/Bipartition.cpp.o
+
+src/Bipartition.i: src/Bipartition.cpp.i
+
+.PHONY : src/Bipartition.i
+
+# target to preprocess a source file
+src/Bipartition.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Bipartition.cpp.i
+	$(MAKE) -f CMakeFiles/build_tree.dir/build.make CMakeFiles/build_tree.dir/src/Bipartition.cpp.i
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/Bipartition.cpp.i
+.PHONY : src/Bipartition.cpp.i
+
+src/Bipartition.s: src/Bipartition.cpp.s
+
+.PHONY : src/Bipartition.s
+
+# target to generate assembly for a file
+src/Bipartition.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Bipartition.cpp.s
+	$(MAKE) -f CMakeFiles/build_tree.dir/build.make CMakeFiles/build_tree.dir/src/Bipartition.cpp.s
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/Bipartition.cpp.s
+.PHONY : src/Bipartition.cpp.s
+
+src/Distance.o: src/Distance.cpp.o
+
+.PHONY : src/Distance.o
+
+# target to build an object file
+src/Distance.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Distance.cpp.o
+	$(MAKE) -f CMakeFiles/build_tree.dir/build.make CMakeFiles/build_tree.dir/src/Distance.cpp.o
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/Distance.cpp.o
+.PHONY : src/Distance.cpp.o
+
+src/Distance.i: src/Distance.cpp.i
+
+.PHONY : src/Distance.i
+
+# target to preprocess a source file
+src/Distance.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Distance.cpp.i
+	$(MAKE) -f CMakeFiles/build_tree.dir/build.make CMakeFiles/build_tree.dir/src/Distance.cpp.i
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/Distance.cpp.i
+.PHONY : src/Distance.cpp.i
+
+src/Distance.s: src/Distance.cpp.s
+
+.PHONY : src/Distance.s
+
+# target to generate assembly for a file
+src/Distance.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Distance.cpp.s
+	$(MAKE) -f CMakeFiles/build_tree.dir/build.make CMakeFiles/build_tree.dir/src/Distance.cpp.s
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/Distance.cpp.s
+.PHONY : src/Distance.cpp.s
+
+src/Geodesic.o: src/Geodesic.cpp.o
+
+.PHONY : src/Geodesic.o
+
+# target to build an object file
+src/Geodesic.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Geodesic.cpp.o
+	$(MAKE) -f CMakeFiles/build_tree.dir/build.make CMakeFiles/build_tree.dir/src/Geodesic.cpp.o
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/Geodesic.cpp.o
+.PHONY : src/Geodesic.cpp.o
+
+src/Geodesic.i: src/Geodesic.cpp.i
+
+.PHONY : src/Geodesic.i
+
+# target to preprocess a source file
+src/Geodesic.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Geodesic.cpp.i
+	$(MAKE) -f CMakeFiles/build_tree.dir/build.make CMakeFiles/build_tree.dir/src/Geodesic.cpp.i
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/Geodesic.cpp.i
+.PHONY : src/Geodesic.cpp.i
+
+src/Geodesic.s: src/Geodesic.cpp.s
+
+.PHONY : src/Geodesic.s
+
+# target to generate assembly for a file
+src/Geodesic.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Geodesic.cpp.s
+	$(MAKE) -f CMakeFiles/build_tree.dir/build.make CMakeFiles/build_tree.dir/src/Geodesic.cpp.s
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/Geodesic.cpp.s
+.PHONY : src/Geodesic.cpp.s
+
+src/PhyloTree.o: src/PhyloTree.cpp.o
+
+.PHONY : src/PhyloTree.o
+
+# target to build an object file
+src/PhyloTree.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/PhyloTree.cpp.o
+	$(MAKE) -f CMakeFiles/build_tree.dir/build.make CMakeFiles/build_tree.dir/src/PhyloTree.cpp.o
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/PhyloTree.cpp.o
+.PHONY : src/PhyloTree.cpp.o
+
+src/PhyloTree.i: src/PhyloTree.cpp.i
+
+.PHONY : src/PhyloTree.i
+
+# target to preprocess a source file
+src/PhyloTree.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/PhyloTree.cpp.i
+	$(MAKE) -f CMakeFiles/build_tree.dir/build.make CMakeFiles/build_tree.dir/src/PhyloTree.cpp.i
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/PhyloTree.cpp.i
+.PHONY : src/PhyloTree.cpp.i
+
+src/PhyloTree.s: src/PhyloTree.cpp.s
+
+.PHONY : src/PhyloTree.s
+
+# target to generate assembly for a file
+src/PhyloTree.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/PhyloTree.cpp.s
+	$(MAKE) -f CMakeFiles/build_tree.dir/build.make CMakeFiles/build_tree.dir/src/PhyloTree.cpp.s
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/PhyloTree.cpp.s
+.PHONY : src/PhyloTree.cpp.s
+
+src/PhyloTreeEdge.o: src/PhyloTreeEdge.cpp.o
+
+.PHONY : src/PhyloTreeEdge.o
+
+# target to build an object file
+src/PhyloTreeEdge.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/PhyloTreeEdge.cpp.o
+	$(MAKE) -f CMakeFiles/build_tree.dir/build.make CMakeFiles/build_tree.dir/src/PhyloTreeEdge.cpp.o
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/PhyloTreeEdge.cpp.o
+.PHONY : src/PhyloTreeEdge.cpp.o
+
+src/PhyloTreeEdge.i: src/PhyloTreeEdge.cpp.i
+
+.PHONY : src/PhyloTreeEdge.i
+
+# target to preprocess a source file
+src/PhyloTreeEdge.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/PhyloTreeEdge.cpp.i
+	$(MAKE) -f CMakeFiles/build_tree.dir/build.make CMakeFiles/build_tree.dir/src/PhyloTreeEdge.cpp.i
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/PhyloTreeEdge.cpp.i
+.PHONY : src/PhyloTreeEdge.cpp.i
+
+src/PhyloTreeEdge.s: src/PhyloTreeEdge.cpp.s
+
+.PHONY : src/PhyloTreeEdge.s
+
+# target to generate assembly for a file
+src/PhyloTreeEdge.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/PhyloTreeEdge.cpp.s
+	$(MAKE) -f CMakeFiles/build_tree.dir/build.make CMakeFiles/build_tree.dir/src/PhyloTreeEdge.cpp.s
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/PhyloTreeEdge.cpp.s
+.PHONY : src/PhyloTreeEdge.cpp.s
+
+src/Ratio.o: src/Ratio.cpp.o
+
+.PHONY : src/Ratio.o
+
+# target to build an object file
+src/Ratio.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Ratio.cpp.o
+	$(MAKE) -f CMakeFiles/build_tree.dir/build.make CMakeFiles/build_tree.dir/src/Ratio.cpp.o
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/Ratio.cpp.o
+.PHONY : src/Ratio.cpp.o
+
+src/Ratio.i: src/Ratio.cpp.i
+
+.PHONY : src/Ratio.i
+
+# target to preprocess a source file
+src/Ratio.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Ratio.cpp.i
+	$(MAKE) -f CMakeFiles/build_tree.dir/build.make CMakeFiles/build_tree.dir/src/Ratio.cpp.i
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/Ratio.cpp.i
+.PHONY : src/Ratio.cpp.i
+
+src/Ratio.s: src/Ratio.cpp.s
+
+.PHONY : src/Ratio.s
+
+# target to generate assembly for a file
+src/Ratio.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Ratio.cpp.s
+	$(MAKE) -f CMakeFiles/build_tree.dir/build.make CMakeFiles/build_tree.dir/src/Ratio.cpp.s
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/Ratio.cpp.s
+.PHONY : src/Ratio.cpp.s
+
+src/RatioSequence.o: src/RatioSequence.cpp.o
+
+.PHONY : src/RatioSequence.o
+
+# target to build an object file
+src/RatioSequence.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/RatioSequence.cpp.o
+	$(MAKE) -f CMakeFiles/build_tree.dir/build.make CMakeFiles/build_tree.dir/src/RatioSequence.cpp.o
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/RatioSequence.cpp.o
+.PHONY : src/RatioSequence.cpp.o
+
+src/RatioSequence.i: src/RatioSequence.cpp.i
+
+.PHONY : src/RatioSequence.i
+
+# target to preprocess a source file
+src/RatioSequence.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/RatioSequence.cpp.i
+	$(MAKE) -f CMakeFiles/build_tree.dir/build.make CMakeFiles/build_tree.dir/src/RatioSequence.cpp.i
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/RatioSequence.cpp.i
+.PHONY : src/RatioSequence.cpp.i
+
+src/RatioSequence.s: src/RatioSequence.cpp.s
+
+.PHONY : src/RatioSequence.s
+
+# target to generate assembly for a file
+src/RatioSequence.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/RatioSequence.cpp.s
+	$(MAKE) -f CMakeFiles/build_tree.dir/build.make CMakeFiles/build_tree.dir/src/RatioSequence.cpp.s
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/RatioSequence.cpp.s
+.PHONY : src/RatioSequence.cpp.s
+
+src/TestMain.o: src/TestMain.cpp.o
+
+.PHONY : src/TestMain.o
+
+# target to build an object file
+src/TestMain.cpp.o:
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/TestMain.cpp.o
+.PHONY : src/TestMain.cpp.o
+
+src/TestMain.i: src/TestMain.cpp.i
+
+.PHONY : src/TestMain.i
+
+# target to preprocess a source file
+src/TestMain.cpp.i:
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/TestMain.cpp.i
+.PHONY : src/TestMain.cpp.i
+
+src/TestMain.s: src/TestMain.cpp.s
+
+.PHONY : src/TestMain.s
+
+# target to generate assembly for a file
+src/TestMain.cpp.s:
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/TestMain.cpp.s
+.PHONY : src/TestMain.cpp.s
+
+src/Tools.o: src/Tools.cpp.o
+
+.PHONY : src/Tools.o
+
+# target to build an object file
+src/Tools.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Tools.cpp.o
+	$(MAKE) -f CMakeFiles/build_tree.dir/build.make CMakeFiles/build_tree.dir/src/Tools.cpp.o
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/Tools.cpp.o
+.PHONY : src/Tools.cpp.o
+
+src/Tools.i: src/Tools.cpp.i
+
+.PHONY : src/Tools.i
+
+# target to preprocess a source file
+src/Tools.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Tools.cpp.i
+	$(MAKE) -f CMakeFiles/build_tree.dir/build.make CMakeFiles/build_tree.dir/src/Tools.cpp.i
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/Tools.cpp.i
+.PHONY : src/Tools.cpp.i
+
+src/Tools.s: src/Tools.cpp.s
+
+.PHONY : src/Tools.s
+
+# target to generate assembly for a file
+src/Tools.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Tools.cpp.s
+	$(MAKE) -f CMakeFiles/build_tree.dir/build.make CMakeFiles/build_tree.dir/src/Tools.cpp.s
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/Tools.cpp.s
+.PHONY : src/Tools.cpp.s
+
+src/build_tree.o: src/build_tree.cpp.o
+
+.PHONY : src/build_tree.o
+
+# target to build an object file
+src/build_tree.cpp.o:
+	$(MAKE) -f CMakeFiles/build_tree.dir/build.make CMakeFiles/build_tree.dir/src/build_tree.cpp.o
+.PHONY : src/build_tree.cpp.o
+
+src/build_tree.i: src/build_tree.cpp.i
+
+.PHONY : src/build_tree.i
+
+# target to preprocess a source file
+src/build_tree.cpp.i:
+	$(MAKE) -f CMakeFiles/build_tree.dir/build.make CMakeFiles/build_tree.dir/src/build_tree.cpp.i
+.PHONY : src/build_tree.cpp.i
+
+src/build_tree.s: src/build_tree.cpp.s
+
+.PHONY : src/build_tree.s
+
+# target to generate assembly for a file
+src/build_tree.cpp.s:
+	$(MAKE) -f CMakeFiles/build_tree.dir/build.make CMakeFiles/build_tree.dir/src/build_tree.cpp.s
+.PHONY : src/build_tree.cpp.s
+
+src/dist_matrix.o: src/dist_matrix.cpp.o
+
+.PHONY : src/dist_matrix.o
+
+# target to build an object file
+src/dist_matrix.cpp.o:
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/dist_matrix.cpp.o
+.PHONY : src/dist_matrix.cpp.o
+
+src/dist_matrix.i: src/dist_matrix.cpp.i
+
+.PHONY : src/dist_matrix.i
+
+# target to preprocess a source file
+src/dist_matrix.cpp.i:
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/dist_matrix.cpp.i
+.PHONY : src/dist_matrix.cpp.i
+
+src/dist_matrix.s: src/dist_matrix.cpp.s
+
+.PHONY : src/dist_matrix.s
+
+# target to generate assembly for a file
+src/dist_matrix.cpp.s:
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/dist_matrix.cpp.s
+.PHONY : src/dist_matrix.cpp.s
+
+src/neighbour_joining.o: src/neighbour_joining.cpp.o
+
+.PHONY : src/neighbour_joining.o
+
+# target to build an object file
+src/neighbour_joining.cpp.o:
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/neighbour_joining.cpp.o
+.PHONY : src/neighbour_joining.cpp.o
+
+src/neighbour_joining.i: src/neighbour_joining.cpp.i
+
+.PHONY : src/neighbour_joining.i
+
+# target to preprocess a source file
+src/neighbour_joining.cpp.i:
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/neighbour_joining.cpp.i
+.PHONY : src/neighbour_joining.cpp.i
+
+src/neighbour_joining.s: src/neighbour_joining.cpp.s
+
+.PHONY : src/neighbour_joining.s
+
+# target to generate assembly for a file
+src/neighbour_joining.cpp.s:
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/neighbour_joining.cpp.s
+.PHONY : src/neighbour_joining.cpp.s
+
+src/phylogenetic_tree.o: src/phylogenetic_tree.cpp.o
+
+.PHONY : src/phylogenetic_tree.o
+
+# target to build an object file
+src/phylogenetic_tree.cpp.o:
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/phylogenetic_tree.cpp.o
+.PHONY : src/phylogenetic_tree.cpp.o
+
+src/phylogenetic_tree.i: src/phylogenetic_tree.cpp.i
+
+.PHONY : src/phylogenetic_tree.i
+
+# target to preprocess a source file
+src/phylogenetic_tree.cpp.i:
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/phylogenetic_tree.cpp.i
+.PHONY : src/phylogenetic_tree.cpp.i
+
+src/phylogenetic_tree.s: src/phylogenetic_tree.cpp.s
+
+.PHONY : src/phylogenetic_tree.s
+
+# target to generate assembly for a file
+src/phylogenetic_tree.cpp.s:
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/phylogenetic_tree.cpp.s
+.PHONY : src/phylogenetic_tree.cpp.s
 
 src/species.o: src/species.cpp.o
 
@@ -177,6 +608,60 @@ src/species.cpp.s:
 	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/species.cpp.s
 .PHONY : src/species.cpp.s
 
+src/test.o: src/test.cpp.o
+
+.PHONY : src/test.o
+
+# target to build an object file
+src/test.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/test.cpp.o
+.PHONY : src/test.cpp.o
+
+src/test.i: src/test.cpp.i
+
+.PHONY : src/test.i
+
+# target to preprocess a source file
+src/test.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/test.cpp.i
+.PHONY : src/test.cpp.i
+
+src/test.s: src/test.cpp.s
+
+.PHONY : src/test.s
+
+# target to generate assembly for a file
+src/test.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/test.cpp.s
+.PHONY : src/test.cpp.s
+
+src/utilities.o: src/utilities.cpp.o
+
+.PHONY : src/utilities.o
+
+# target to build an object file
+src/utilities.cpp.o:
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/utilities.cpp.o
+.PHONY : src/utilities.cpp.o
+
+src/utilities.i: src/utilities.cpp.i
+
+.PHONY : src/utilities.i
+
+# target to preprocess a source file
+src/utilities.cpp.i:
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/utilities.cpp.i
+.PHONY : src/utilities.cpp.i
+
+src/utilities.s: src/utilities.cpp.s
+
+.PHONY : src/utilities.s
+
+# target to generate assembly for a file
+src/utilities.cpp.s:
+	$(MAKE) -f CMakeFiles/Kmers.dir/build.make CMakeFiles/Kmers.dir/src/utilities.cpp.s
+.PHONY : src/utilities.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -184,14 +669,61 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... Kmers"
 	@echo "... edit_cache"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... tests"
+	@echo "... build_tree"
+	@echo "... Kmers"
+	@echo "... src/BipartiteGraph.o"
+	@echo "... src/BipartiteGraph.i"
+	@echo "... src/BipartiteGraph.s"
+	@echo "... src/Bipartition.o"
+	@echo "... src/Bipartition.i"
+	@echo "... src/Bipartition.s"
+	@echo "... src/Distance.o"
+	@echo "... src/Distance.i"
+	@echo "... src/Distance.s"
+	@echo "... src/Geodesic.o"
+	@echo "... src/Geodesic.i"
+	@echo "... src/Geodesic.s"
+	@echo "... src/PhyloTree.o"
+	@echo "... src/PhyloTree.i"
+	@echo "... src/PhyloTree.s"
+	@echo "... src/PhyloTreeEdge.o"
+	@echo "... src/PhyloTreeEdge.i"
+	@echo "... src/PhyloTreeEdge.s"
+	@echo "... src/Ratio.o"
+	@echo "... src/Ratio.i"
+	@echo "... src/Ratio.s"
+	@echo "... src/RatioSequence.o"
+	@echo "... src/RatioSequence.i"
+	@echo "... src/RatioSequence.s"
+	@echo "... src/TestMain.o"
+	@echo "... src/TestMain.i"
+	@echo "... src/TestMain.s"
+	@echo "... src/Tools.o"
+	@echo "... src/Tools.i"
+	@echo "... src/Tools.s"
+	@echo "... src/build_tree.o"
+	@echo "... src/build_tree.i"
+	@echo "... src/build_tree.s"
+	@echo "... src/dist_matrix.o"
+	@echo "... src/dist_matrix.i"
+	@echo "... src/dist_matrix.s"
+	@echo "... src/neighbour_joining.o"
+	@echo "... src/neighbour_joining.i"
+	@echo "... src/neighbour_joining.s"
+	@echo "... src/phylogenetic_tree.o"
+	@echo "... src/phylogenetic_tree.i"
+	@echo "... src/phylogenetic_tree.s"
 	@echo "... src/species.o"
 	@echo "... src/species.i"
 	@echo "... src/species.s"
+	@echo "... src/test.o"
+	@echo "... src/test.i"
+	@echo "... src/test.s"
+	@echo "... src/utilities.o"
+	@echo "... src/utilities.i"
+	@echo "... src/utilities.s"
 .PHONY : help
 
 
